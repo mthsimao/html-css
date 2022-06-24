@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: rgb(158, 157, 157);
+    padding: 5px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.356);
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+nav >a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0px 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.349);
+}
+
+#noticias {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.349);
+}
+
+article {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.336);
+}
+
+article >h2 {
+    padding-left: 15px;
+}
+
+article > aside {
+    background-color: rgb(179, 179, 179);
+    margin: 1px;
+    padding: 1px;
+    width: 250px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Meu site</h1>
+        <nav> 
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Tecnologia da computação</h2>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui aut beatae deserunt placeat neque officiis eligendi quae consequatur, saepe dolore pariatur nobis accusamus accusantium illum incidunt reiciendis suscipit iure ad.</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa molestiae animi ab corrupti mollitia totam voluptatibus facilis ad nesciunt, consequatur sequi. Illo fugiat ipsum laborum porro reiciendis quas exercitationem dignissimos?</p>
+            </article>
+        </section>
+    </main>
+
+    <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi tempora harum asperiores accusantium sint dolore inventore? Maiores et ab consequuntur architecto omnis, tenetur, earum enim voluptatibus, beatae blanditiis saepe quidem!</p>
+                <aside>
+                    <p>Artigo escrito por João Dias</p>
+                </aside>
+            </article>
+        </section>
+    <footer>
+        <p>Desenvolvido por Matheus Simão</p>
+    </footer>
+
+</body>
+</html>

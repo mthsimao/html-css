@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id    = em CSS é # (só pode um elemento com o mesmo nome)
+    em HTML é class = em CSS é . (pode vários elementos com o mesmo nome)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+body {
+    background-color: #9ecdff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #1a3149;
+}
+
+h2 {
+    color: #41648a;
+}
+
+#principal {
+    text-align: center;
+    color: white;
+    background-color: #2D445C;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+.basico {
+    color: #418a4b;
+}
+
+.intermediario {
+    color: #7f8a41;
+}
+
+.avancado {
+    color: #8a4141;
+}
+
+.estilo {
+    font-family: 'Roboto Slab' , 'Arial' , Helvetica, sans-serif;
+}
+
