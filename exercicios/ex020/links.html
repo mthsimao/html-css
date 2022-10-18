@@ -20,6 +20,32 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         
+        .content {
+            position: fixed;
+            top: 35%;
+            left: 35%;
+            background-color: rgba(106, 122, 168, 0.603);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.205);
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: center;
+        }
+
+        ul li {
+            padding: 10px;
+        }
+
+        li > a {
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.301);
+        }
+
         a {
             color: rgb(5, 63, 255);
             text-decoration: none;
@@ -36,7 +62,7 @@
         }
 
         a:active {
-            color: pink;
+            color: orange;
         }
 
         a::after {
@@ -50,17 +76,15 @@
 
 </head>
 <body>
-    <h1>Personalizando links</h1>
-
-    <ul>
-        <li><a href="https://www.instagram.com/mthsimao1/" target="_blank" rel="nofollow">Instagram</a></li>
-
-        <li><a href="https://www.twitter.com/matingasw" target="_blank" rel="nofollow">Twitter</a></li>
-
-        <li><a href="https://www.youtube.com" target="_blank" rel="nofollow">Youtube</a></li>
-
-        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="nofollow">Site do Curso em Video</a></li>
-    </ul>
+    <div class="content">
+        <h1>Personalizando links</h1>
+        <ul>
+            <li><a href="https://www.instagram.com/mthsimao1/" target="_blank" rel="nofollow">Instagram</a></li>
+            <li><a href="https://www.twitter.com/matingasw" target="_blank" rel="nofollow">Twitter</a></li>
+            <li><a href="https://www.youtube.com" target="_blank" rel="nofollow">Youtube</a></li>
+            <li><a href="https://www.cursoemvideo.com" target="_blank" rel="nofollow">Site do Curso em Video</a></li>
+        </ul>
+    </div>
 
 
 </body>
