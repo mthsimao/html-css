@@ -11,17 +11,20 @@
         }
 
         table {
-            width: 300px;
+            height: 400px;
+            width: 400px;
             border-collapse: collapse;
-        }
-
-        tr.linha {
-            background-color: darkgray ;
         }
 
         td {
             padding: 8px;
             border: 1px solid black;
+            text-align: center;  /*alinhamento horizontal*/
+            vertical-align: middle; /*alinhamento vertical*/
+        }
+
+        .numero {
+            text-align: right;
         }
     </style>
 </head>
@@ -43,17 +46,17 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
