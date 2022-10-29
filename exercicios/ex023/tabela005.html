@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        th , td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cnome {
+            background-color: rgb(111, 185, 96);
+        }
+
+        .none {
+            background-color: rgb(105, 105, 105);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+            <col class="none" span="2">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+            <th scope="col">Sonho</th>
+            <th scope="col">Desejo</th>
+        </tr>
+
+        <tr>
+            <td>Ana maria</td>
+            <td>Feminino</td>
+            <td>26</td>
+            <td>Jornalista</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Ana Beatriz</td>
+            <td>Feminino</td>
+            <td>31</td>
+            <td>Empresária</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>Masculino</td>
+            <td>35</td>
+            <td>Médico</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Gabriela</td>
+            <td>Feminino</td>
+            <td>27</td>
+            <td>Lutadora</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Matheus</td>
+            <td>Masculino</td>
+            <td>28</td>
+            <td>Progamador</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Masculino</td>
+            <td>42</td>
+            <td>Pedreiro</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>Feminino</td>
+            <td>49</td>
+            <td>Radialista</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
