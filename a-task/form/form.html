@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte seu tênis</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .container {
+            height: 85vh;
+            padding: 10px;
+            position: relative;
+        }
+
+        .formulario {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            background-color: lightblue;
+            border-radius: 10px;
+            padding: 2em;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form div{
+            padding: 10px 0;
+        }
+
+        .marca input {
+            height: 20px;
+            padding: 5px;
+        }
+
+        .numero select{
+            font-size: 20px;
+            padding: 3px 5px;
+        }
+
+        textarea {
+            font-size: 1em;
+            padding: 8px;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        .submit input {
+            background-color: black;
+            color: white;
+            width: 220px;
+            padding: 1em 2em;
+            border-radius: 10px;
+            border: 0;
+            outline: 0;
+            font-size: 1em; 
+            transition: all .4s ease-in-out;
+        }
+
+        .submit input:hover {
+            background-color: rgb(70, 70, 70);
+            cursor: pointer;
+            transform: translateY(10px);
+           
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="container">
+
+        <div class="formulario">
+            <h1>Escolha como voce quer o seu tênis personalizado:</h1>
+            
+            <div class="form">
+           
+                <form action="tenis.php" method="post">
+                    <div class="marca">
+                        <label for="imarca">Marca / Estilo:</label> <br>
+                        <input type="text" name="marca" id="imarca" list="listamarca" required>
+                        <datalist id="listamarca">
+                            <option>Lakai</option>
+                            <option>Vans</option>
+                            <option>Nike</option>
+                            <option>DC</option>
+                            <option>QIX</option>
+                        </datalist>
+                    </div>
+                    <div class="cores">
+                        <label for="icorpri">Cor primária da sua personalização:</label>
+                        <input type="color" name="cor" id="icorpri" value="#8903f1" required>
+                    </div>
+                       
+                    <div class="cores">
+                        <label for="icorsec">Cor secundária da sua personalização:</label>
+                        <input type="color" name="cor" id="icorsec" value="#ffffff">
+                    </div>
+                    
+                    <div class="numero">
+                        <label for="inumero">Número do seu tênis</label>
+                        <select name="numero" id="inumero" required>
+                            <option>34</option>
+                            <option>35</option>
+                            <option>36</option>
+                            <option>37</option>
+                            <option>38</option>
+                            <option>39</option>
+                            <option selected>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                        </select>
+                    </div>
+                    <div class="obs">
+                        <label for="imsg">Observação:</label> <br>
+                        <textarea name="msg" id="imsg" cols="30" rows="5"></textarea>
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
