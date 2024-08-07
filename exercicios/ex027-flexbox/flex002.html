@@ -8,7 +8,9 @@
         .container {
             background-color: lightsalmon;
             display: flex;
-            flex-direction: row; /*direção do container*/
+            flex-flow: row wrap;
+            /* flex flow: flex-direction + flex-wrap*/
+           
         }
         
         .item {
@@ -16,6 +18,7 @@
             border: 1px solid black;
             padding: 10px;
             text-align: center;
+            flex: auto; /*Não permite que tenha espaço em branco dentro do container pai*/
         }
     </style>
 </head>
